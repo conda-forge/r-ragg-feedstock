@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ragg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ragg/ragg_{{ version }}.tar.gz
-  sha256: 6fc5210bec95941873b1857c49390e39f6c56942526c2db405251e8e4f6f8bd0
+  sha256: 9c53676676b2b10fa057afaac13d7761b3a4ee3224c77990f47b385539a713bb
 
 build:
   merge_build_host: true  # [win]
@@ -51,9 +51,9 @@ test:
 about:
   home: https://ragg.r-lib.org
   license: MIT
-  license_file: 
-    - LICENSE 
-    - LICENSE.note 
+  license_file:
+    - LICENSE
+    - LICENSE.note
 
   summary: Anti-Grain Geometry (AGG) is a high-quality and high-performance 2D drawing library. The 'ragg' package provides a set of graphic devices  based on AGG
     to use as alternative to the raster devices provided through the 'grDevices' package.
