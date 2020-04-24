@@ -36,12 +36,14 @@ requirements:
     - r-systemfonts
     - freetype
     - libpng
+    - libtiff
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
     - r-systemfonts
     - freetype
     - libpng
+    - libtiff
 
 test:
   commands:
