@@ -1,7 +1,7 @@
 #!/bin/bash
 if [[ $target_platform =~ linux.* ]] || [[ $target_platform == win-32 ]] || [[ $target_platform == win-64 ]] || [[ $target_platform == osx-64 ]]; then
   export DISABLE_AUTOBREW=1
-  $R CMD INSTALL --build . --configure-vars="INCLUDE_DIR=${PREFIX}/include:$PREFIX/include/freetype2 LIB_DIR=${PREFIX}/lib"
+  $R CMD INSTALL --build . --configure-vars="INCLUDE_DIR=\"${PREFIX}/include -I${PREFIX}/include/freetype2 -I${PREFIX}/include/libpng16\" LIB_DIR=${PREFIX}/lib"
 else
   mkdir -p $PREFIX/lib/R/library/ragg
   mv * $PREFIX/lib/R/library/ragg
