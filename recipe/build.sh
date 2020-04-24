@@ -1,5 +1,7 @@
 #!/bin/bash
 if [[ $target_platform =~ linux.* ]] || [[ $target_platform == win-32 ]] || [[ $target_platform == win-64 ]] || [[ $target_platform == osx-64 ]]; then
+  export PKG_CFLAGS="-I${PREFIX}/include/freetype2 -I${PREFIX}/include/libpng16 -I${PREFIX}/include"
+  export PKG_LIBS="-L${PREFIX}/lib -lfreetype -lpng16 -lz -ltiff -ljpeg -lbz2"
   export DISABLE_AUTOBREW=1
   $R CMD INSTALL --build .
 else
