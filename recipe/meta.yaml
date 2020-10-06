@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ragg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ragg/ragg_{{ version }}.tar.gz
-  sha256: 12c25d9d36c146f99d99aa3dab46c8b8529b10a5cdd3dce86fbfc8fb3f7781f3
+  sha256: 7844b9504dee163ce4ff3c0fe3e29834726acc7b197d796d50cbe7a8ec4b1689
   patches:
     - 0001-Darwin-Disable-autobrew-in-configure.patch
 
@@ -36,12 +36,14 @@ requirements:
   host:
     - r-base
     - r-systemfonts
+    - r-textshaping
     - freetype
     - libpng
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-systemfonts
+    - r-textshaping
     - freetype
     - libpng
 
