@@ -36,12 +36,14 @@ requirements:
   host:
     - r-base
     - r-systemfonts
+    - r-textshaping
     - freetype
     - libpng
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-systemfonts
+    - r-textshaping
     - freetype
     - libpng
 
