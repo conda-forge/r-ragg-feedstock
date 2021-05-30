@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ragg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ragg/ragg_{{ version }}.tar.gz
-  sha256: 7844b9504dee163ce4ff3c0fe3e29834726acc7b197d796d50cbe7a8ec4b1689
+  sha256: 380cd39674a3c2da90d66641c009cdec452fe4f9233cf9778cf81cc7fa1aa104
   patches:
     - 0001-Darwin-Disable-autobrew-in-configure.patch
 
