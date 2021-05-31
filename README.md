@@ -1,13 +1,13 @@
 About r-ragg
 ============
 
-Home: https://ragg.r-lib.org
+Home: https://ragg.r-lib.org, https://github.com/r-lib/ragg
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ragg-feedstock/blob/master/LICENSE.txt)
 
-Summary: Anti-Grain Geometry (AGG) is a high-quality and high-performance 2D drawing library. The 'ragg' package provides a set of graphic devices  based on AGG to use as alternative to the raster devices provided through the 'grDevices' package.
+Summary: Anti-Grain Geometry (AGG) is a high-quality and high-performance 2D drawing library. The 'ragg' package provides a set of graphic devices based on AGG to use as alternative to the raster devices provided through the 'grDevices' package.
 
 Current build status
 ====================
@@ -90,6 +90,7 @@ Installing `r-ragg` from the `conda-forge` channel can be achieved by adding `co
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-ragg` can be installed with:
