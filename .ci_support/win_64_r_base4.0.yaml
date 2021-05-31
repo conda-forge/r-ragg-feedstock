@@ -5,9 +5,13 @@ channel_targets:
 cran_mirror:
 - https://cran.r-project.org
 freetype:
-- 2.9.1
+- '2'
+jpeg:
+- '9'
 libpng:
 - '1.6'
+libtiff:
+- '4'
 m2w64_c_compiler:
 - m2w64-toolchain
 m2w64_cxx_compiler:
@@ -15,12 +19,16 @@ m2w64_cxx_compiler:
 pin_run_as_build:
   freetype:
     max_pin: x
+  jpeg:
+    max_pin: x
   libpng:
     max_pin: x.x
+  libtiff:
+    max_pin: x
   r-base:
     min_pin: x.x
     max_pin: x.x
 r_base:
-- '3.6'
+- '4.0'
 target_platform:
 - win-64
