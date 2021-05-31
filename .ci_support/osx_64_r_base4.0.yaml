@@ -16,15 +16,23 @@ cxx_compiler_version:
 - '11'
 freetype:
 - '2'
+jpeg:
+- '9'
 libpng:
 - '1.6'
+libtiff:
+- '4'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 pin_run_as_build:
   freetype:
     max_pin: x
+  jpeg:
+    max_pin: x
   libpng:
     max_pin: x.x
+  libtiff:
+    max_pin: x
   r-base:
     min_pin: x.x
     max_pin: x.x
