@@ -1,11 +1,22 @@
+About r-ragg-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ragg-feedstock/blob/main/LICENSE.txt)
+
 About r-ragg
-============
+------------
 
 Home: https://ragg.r-lib.org, https://github.com/r-lib/ragg
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ragg-feedstock/blob/main/LICENSE.txt)
+Summary: Anti-Grain Geometry (AGG) is a high-quality and high-performance 2D drawing library. The 'ragg' package provides a set of graphic devices based on AGG to use as alternative to the raster devices provided through the 'grDevices' package.
+About r-ragg
+------------
+
+Home: https://ragg.r-lib.org, https://github.com/r-lib/ragg
+
+Package license: MIT
 
 Summary: Anti-Grain Geometry (AGG) is a high-quality and high-performance 2D drawing library. The 'ragg' package provides a set of graphic devices based on AGG to use as alternative to the raster devices provided through the 'grDevices' package.
 
@@ -13,14 +24,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/r-ragg-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/r-ragg-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
