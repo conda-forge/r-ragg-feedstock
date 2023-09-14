@@ -3,6 +3,7 @@ About r-ragg-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ragg-feedstock/blob/main/LICENSE.txt)
 
+
 About r-ragg
 ------------
 
@@ -11,6 +12,7 @@ Home: https://ragg.r-lib.org, https://github.com/r-lib/ragg
 Package license: MIT
 
 Summary: Anti-Grain Geometry (AGG) is a high-quality and high-performance 2D drawing library. The 'ragg' package provides a set of graphic devices based on AGG to use as alternative to the raster devices provided through the 'grDevices' package.
+
 About r-ragg
 ------------
 
