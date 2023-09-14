@@ -41,7 +41,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-systemfonts >=1.0.0
+    - r-systemfonts >=1.0.3
     - r-textshaping >=0.3.0
     - freetype
     - libpng
@@ -50,7 +50,7 @@ requirements:
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-systemfonts >=1.0.0
+    - r-systemfonts >=1.0.3
     - r-textshaping >=0.3.0
 
 test:
