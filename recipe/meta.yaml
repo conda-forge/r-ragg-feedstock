@@ -1,4 +1,4 @@
-{% set version = "1.2.6" %}
+{% set version = "1.2.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ragg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ragg/ragg_{{ version }}.tar.gz
-  sha256: 1014dc493ab52e98e4114fbabfca753bebd4d64db7ef7946bd064fb404e0f7c7
+  sha256: d77a18662d127881dcb5046033eb809293ad9ad439fa4b217202b8cef4280c9f
 
 build:
   merge_build_host: true  # [win]
