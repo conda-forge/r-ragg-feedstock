@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ragg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ragg/ragg_{{ version }}.tar.gz
-  sha256: 8cccdc2c0ec3cc11b532a52b35161537ecfe2257b39f22e3bb281e7fe31e0977
+  sha256: b8f21c722a05b622a431c53fce748cc8cad52f4791e843e6340dd198477ddabd
 
 build:
   number: 0
